@@ -16,9 +16,15 @@
             "name": "Community contributions"
         }
     ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/GSadee/Sylius"
+        }
+    ],
     "require": {
         "php": "^7.2",
-        "sylius/sylius": "~1.3.0",
+        "sylius/sylius": "dev-cli-command-plugins",
         "symfony/flex": "^1.1",
         "sensiolabs/security-checker": "^5.0"
     },
@@ -69,7 +75,8 @@
             "@auto-scripts"
         ],
         "post-update-cmd": [
-            "@auto-scripts"
+            "@auto-scripts",
+            "bin/console sylius:show-available-plugins"
         ],
         "post-create-project-cmd": [
             "bin/console sylius:show-available-plugins"
