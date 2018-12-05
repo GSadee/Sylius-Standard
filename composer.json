@@ -76,10 +76,10 @@
         ],
         "post-update-cmd": [
             "@auto-scripts",
-            "bin/console sylius:show-available-plugins"
+            "bin/console sylius:show-available-plugins --ansi"
         ],
         "post-create-project-cmd": [
-            "bin/console sylius:show-available-plugins"
+            "bin/console sylius:show-available-plugins --ansi"
         ]
     },
     "config": {
