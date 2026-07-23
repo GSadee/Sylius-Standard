@@ -60,3 +60,7 @@ phpstan.neon
 ###> liip/imagine-bundle ###
 /public/media/cache/
 ###< liip/imagine-bundle ###
+
+# Lock files - ignored in the template; each project versions its own (see composer.json / Makefile scripts)
+/composer.lock
+/yarn.lock
